@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+ <meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <meta name="viewport"
+ content="width=device-width, initial-scale=1.0">
+ <title>ICS6 Bootstrap</title>
+<link href="bootstrap.min.css" type="text/css" rel="stylesheet">
+ <style>
+ html {
+ position: relative;
+ min-height: 100%;
+ }
+ body {
+ margin-bottom: 40px;
+ }
+ main {
+ margin-top: 15px;
+ }
+ footer {
+ height: 40px;
+ position: absolute;
+ bottom: 0;
+ width: 100%;
+ }
+ .my-primary {
+ background-color: #CC0000;
+ color: white;
+ }
+.my-footer {
+ background-color: #FF9900;
+ }
+     table, tr, th, td {
+            border: 1px solid black;
+            }
+            table
+            {
+                margin-left:auto;
+                margin-right:auto;
+                font-size:12px;
+            }
+            h3 {
+            text-align: center;
+            }
+     #a{text-align:center;}
+     #b{text-align:center;}
+     #c{text-align:center;}
+     #d{text-align:center;}
+ </style>
+</head>
+<body>
+ <header>
+ <nav class="navbar navbar-expand-lg navbar-dark my-primary">
+ <a class="navbar-brand" href="#">Navbar</a>
+ <ul class="navbar-nav mr-auto">
+ <li class="nav-item active">
+ <a class="nav-link" href="#">Home
+ <span class="sr-only">(current)</span>
+ </a>
+ </li>
+ <li class="nav-item">
+ <a class="nav-link" href="#">Link</a>
+ </li>
+ </ul>
+ </nav>
+ </header>
+ <main class="container">
+ <div class="row">
+ <div class="col-12">
+ <img src="avatar.jpg" alt="avatar" width="150" height="150">
+ </div>
+ <div class="col-4">
+ <p><em>Котик( =ω=)</em></p>
+ </div>
+ </div>
+
+ <div class="row">
+ <div class="col-4">
+     <h3><strong>Форма регистрации</strong></h3>
+    <br />
+    <table>
+        <tr>
+            <td>Имя </td>
+        <td><input type="text" class="form-control"
+ id="exampleInputFName" placeholder="Enter first name"></td>
+        </tr>
+        <tr>
+            <td>Фамилия </td>
+        <td><input type="text" class="form-control"
+ id="exampleInputLName" placeholder="Enter last name"></td>
+        </tr>
+        <tr>
+            <td>Отчество </td>
+        <td><input type="text" class="form-control"
+ id="exampleInputpatronymic" placeholder="Enter patronymic"></td>
+        </tr>
+        <tr>
+            <td>Дата рождения </td>
+        <td><input type="date" class="form-control"
+ id="exampleInputDate" ></td>
+        </tr>
+        <tr>
+            <td>Электронная почта </td>
+        <td><input type="email" class="form-control"
+ id="exampleInputEmail1" placeholder="Enter email"></td>
+        </tr>
+        <tr>
+            <td>Пароль </td>
+        <td><input type="password" class="form-control"
+ id="exampleInputPassword" placeholder="Enter password"></td>
+        </tr>
+    </table>
+    <br />
+    <div id="a"><input type="submit" value="Отправить" /></div>
+ </div>
+ <div class="col-4">
+ <h3><strong>Расписание занятий группы ИУ6-35Б</strong></h3>
+        <div id="div1">
+        <table class="table table-striped">
+             <thead class="thead-dark">
+            <tr>
+                <th><div id="b">Время</div></th>
+                <th style="width:50%"><div id="c">Числитель</div></th>
+                <th style="width:50%"><div id="d">Знаменатель</div></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>8:30-10:05</td>  
+                <td colspan="2">(сем)Элективный курс по физической культуре и спорту каф.ФВ</td>
+            </tr>
+            <tr>
+                <td>10:15-11:50</td>
+                <td colspan="2">(лек)Теория вероятностей и математическая статистика 218л Горяинов В.Б.</td>
+            </tr>
+            <tr>
+                <td>12:00-13:35</td>
+                <td colspan="2">(сем)Иностранный язык каф.Л2</td>
+            </tr>
+            <tr>
+                <td>13:50-15:25</td>
+                <td colspan="2">(сем)Правоведение 619л</td>
+            </tr>
+            <tr>
+                <td>15:40-17:15</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>17:25-19:00</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>19:10-20:45</td>
+                <td></td>
+                <td></td>
+            </tr>
+                </tbody>
+        </table>
+            </div>
+ </div>
+ <div class="col-4">
+     <h3><strong>Текст</strong></h3>
+ <ol>
+        <li>Меня зовут <strong>Игорь Ягмуров</strong>.<br /></li>
+        <li><strong>Формула сокращенного умножения</strong> <em>квадрат разности</em>: <var>a<sup>2</sup></var>-<var>b<sup>2</sup></var>=(<var>a</var>+<var>b</var>)*(<var>a</var>-<var>b</var>)<br /></li>
+        <li><em>Химическая</em> формула <strong>спирта</strong>: <var>C<sub>2</sub></var><var>H<sub>5</sub></var><var>OH</var><br /></li>
+        <li>Моя профессия <strong>самая важная</strong> в мире, я - <em>врач</em>.<br /></li>
+        <li><strong>Самый богатый</strong> человек в мире на данный момент - это <em>Илон Маск</em>.<br /></li>
+        <li>Недавно <em>Индия</em> стала <strong>самой большой страной</strong> по населению в мире!<br /></li>
+        <li>Как говорилось в той песне: <em>"и разошлись как в море корабли"</em>.<br /></li>
+        <li><strong>Лучший</strong> <em>технический вуз</em> Российской Федерации - это <em>МГТУ им.Н.Э.Баумана</em>.<br /></li>
+        <li>Как говорил <strong>великий футболист</strong> <em>Андрей Аршавин</em>: <em>"Ваши ожидания - ваши проблемы"</em>.<br /></li>
+        <li><em>"Почему?"</em> Именно этот вопрос задал <strong>Жак Фреско</strong> перед смертью.<br /></li>
+        <li><strong>Запомнить:</strong> <var>a<sup>2</sup></var>+<var>b<sup>2</sup></var>=<var>a<sup>2</sup></var>+2<var>a</var><var>b</var>+<var>b<sup>2</sup></var><br /></li>
+        <li>Код программы:<br />
+            <code>
+                #include &lt;stdio.h&gt;<br/>
+                using namespace std;<br />
+                int main ()<br/>
+                {<br/>
+                    &nbsp;&nbsp;&nbsp;cout &lt;&lt; "Hello, World!";<br/>
+                    &nbsp;&nbsp;&nbsp;return 0;<br/>
+                }
+            </code>
+        </li>
+        </ol>
+        <br />
+ </div>
+     </div>
+ </main>
+ <footer class="my-footer">
+ <div class="container">
+ <p class="footer-text">Footer</p>
+ </div>
+ </footer>
+</body>
+</html>
