@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset = "utf-8">
+    <title>Лабораторная работа 3</title>
+    <style>
+            table, tr, th, td {
+            border: 1px solid black;
+            }
+            h1{
+                text-align:center;
+            }
+            table
+            {
+                margin-left:auto;
+                margin-right:auto;
+                font-size:24px;
+            }
+            div {
+            text-align: center;
+            }
+        #a{text-align:center;}
+        #b{text-align:center;}
+        </style>
+<script>
+var str = '';
+function Tree(el,s) {
+    if(el.localName==undefined) return;
+  str += s + el.localName.toUpperCase() + '<br>';
+  console.log(el.localName);
+  if (el.childNodes.length == 0)
+    return;
+  else{
+    for (var i = 0; i<el.childNodes.length;i++){
+    Tree(el.childNodes[i],s+'&nbsp;&nbsp;&nbsp;&nbsp;');}
+}
+}
+
+function CallTree()
+    {
+        Tree(document.body,'');
+        var section = document.getElementById("call");
+        section.innerHTML = str;
+        
+    }
+</script>
+</head>
+<body>
+<h1><strong>Список предметов, которые необходимо купить первокурснику на факультете ИУ</strong></h1>
+    <table>
+        <tr>
+            <th>Наименование</th>
+            <th>Минимальное количество</th>
+            <th>Рекомендуемое количество</th>
+        </tr>
+        <tr>
+            <td>Ноутбук</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>Тетради(лекционные и семинарские)</td>
+            <td>10(5+5)</td>
+            <td>14(6+8)</td>
+        </tr>
+        <tr>
+            <td>Ручки</td>
+            <td>5</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>Рюкзак(Сумка)</td>
+            <td>1</td>
+            <td>2(1 для физической культуры, 1 для предметов)</td>
+        </tr>
+        <tr>
+            <td>Физкультурная форма</td>
+            <td>1 комплект</td>
+            <td>2 комплекта</td>
+        </tr>
+        <tr>
+            <td>Официальный костюм</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>Проездной</td>
+            <td>На месяц</td>
+            <td>На год</td>
+        </tr>
+    </table>
+<br />
+    <div id="b"><button onclick="CallTree();">Вызвать дерево</button></div>
+    <div><pre id="call"></pre></div>
+</body>
+</html>
