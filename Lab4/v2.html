@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset = "utf-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script src="v2.js"></script>
+        <title>Лабораторная работа 4</title>
+        <style>
+            table,tr, th, td {
+            border: 1px solid black;   
+            }
+            #tab{
+                margin-top:10px;
+                border: 1px solid black; 
+            }
+            #price:hover {
+	               background: #fffabe;
+                }
+            tr, th, td {
+                padding-top:10px;
+            }
+            #cen{
+                 margin-left:10%;}
+             #tab2{
+                 text-align:center;
+                margin:auto;
+                border: 1px solid black; 
+            }
+            #a{text-align:center;}
+        </style>
+    </head>
+    <body>
+        <div id="cen">
+        <h3><strong>Форма товаров</strong></h3>
+    <br />
+   <form id="add_goods">
+Добавить товар
+    <ul>
+        <li>
+            <label for="name">Название товара</label>
+            <input type="text" name="name" id="name" value="" size="12" tabindex="1" />
+        </li>
+        <li>
+            <label for="cost">Стоимость(руб)</label>
+            <input type="number" name="cost" id="cost" value="" size="12" tabindex="2" min="0" />
+        </li>
+	</ul>
+</form>
+    <br />
+        <button onclick="PushTab();">Добавить</button>
+    <table id = "tab">
+        <tr>
+            <td>Наименование</td>
+            <td>Стоимость(руб)</td>
+        </tr>
+    </table>
+        <br />
+        <h1>Рассчитать суммарную стоимость товаров</h1>
+        <button onclick="SumCost();">Рассчитать</button>
+        <div><pre id="Cost"></pre></div>
+            </div>
+        <div id="a"> <h1>Корзина товаров</h1>
+        <table id = "tab2">
+        <tr>
+            <td>Наименование</td>
+            <td>Стоимость(руб)</td>
+        </tr>
+    </table>
+            <div><pre id="Cost2"></pre></div>
+        </div>
+    </body>
+    
+</html>
